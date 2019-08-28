@@ -6,8 +6,10 @@
         <link rel="icon" type="image/png" href="images/favicon.png">
         <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
         <link rel="stylesheet" href="css/estilos.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     </head>
     <body>
+        <i class="icon-menu burger-button" id="burger-menu"></i>
         <header class="header">
             <div class="container">
                 <figure class="logo">
@@ -22,7 +24,7 @@
                             <a class="link" href="#eventos-titulo">Experiencia</a>
                         </li>
                         <li>
-                            <a class="link" href="#contacto">Trabajemos juntos</a>
+                            <a class="link" href="#contacto">Contacto</a>
                         </li>
                     </ol>
                 </nav>
@@ -31,8 +33,8 @@
         <section class="hero">
             <div class="container">
                 <h1>
-                    ¡Hola! Soy <strong>Mario Johar</strong> <br> Desarrollador <strong>Fullstack Javascript</strong> <br>y estudiante
-                      de <strong>BEDU</strong>
+                    ¡Hola! Soy <strong>Mario Johar</strong> <br> Desarrollador <strong>frontend</strong> con <br>conocimientos
+                      en el stack <strong>MERN</strong>
                 </h1>
                 <img class="hero-image" src="images/hero.jpg" width="500" height="300">
             </div>
@@ -40,6 +42,22 @@
         <section id="portafolio" class="portfolio">
             <div class="container">
                 <h2>Portafolio (proyectos destacados)</h2>
+                <article class="project">
+                    <div class="project-details">
+                        <h3 class="project-title">Platzi Video</h3>
+                        <h6 class="project-course">HTML, CSS y JS</h6>
+                        <p class="project-date"><small><strong>Fecha:</strong> En desarrollo</small></p>
+                        <p class="project-url"><small><strong>Puedes verlo en:</strong> Proximamente</small></p>
+                        <p class="project-description">Proyecto realizado en la carrera de la Escuela de Javascript de Platzi.
+                            <br> Un clon de Netflix que fue desarrollado desde la preparación del ambiente de trabajo, desarrollo Frontend, 
+                            Responsive Design, agregar páginas y navegación, manejo de estados, crear servidores con Express, autenticación, 
+                            seguridad, testing y despliegue de la aplicación.
+                        </p>
+                    </div>
+                    <figure class="project-imageContainer">
+                        <img class="project-image" src="images/platzi-video.png" alt="curso react" width="500">
+                    </figure>
+                </article>
                 <article class="project">
                     <div class="project-details">
                         <h3 class="project-title">Proyecto e-sports</h3>
@@ -71,20 +89,35 @@
                         </figure>
                     </article>
                     <article class="project">
-                            <div class="project-details">
-                                <h3 class="project-title">Restaurantes</h3>
-                                <h6 class="project-course">HTML, CSS y JS. API de Google Maps</h6>
-                                <p class="project-date"><small><strong>Fecha:</strong>19/12/2018</small></p>
-                                <p class="project-url"><small><strong>Repositorio:</strong> <a href="https://github.com/mjohar30/IntelimetricaProject">Repo Restaurantes</a> </small></p>
-                                <p class="project-url"><small><strong>Puedes verlo en:</strong> <a href="https://mjohar30.github.io/IntelimetricaProject/">Restaurantes</a> </small></p>                                
-                                <p class="project-description"> Se muestran los datos de distintos restaurantes, extrayéndolos de una url usando el método fetch.
-                                    También se usa la API de Google Maps para mostrar la ubicación del restaurante, dependiendo de las coordenadas que se tengan.
-                                </p>
-                            </div>
-                            <figure class="project-imageContainer">
-                                <img class="project-image" src="images/restaurantes.png" alt="curso react" width="500">
-                            </figure>
-                        </article>
+                        <div class="project-details">
+                            <h3 class="project-title">Simon Says</h3>
+                            <h6 class="project-course">HTML, CSS y JS</h6>
+                            <p class="project-date"><small><strong>Fecha:</strong>19/12/2018</small></p>
+                            <p class="project-url"><small><strong>Repositorio:</strong> <a href="https://github.com/mjohar30/IntelimetricaProject">Repo Restaurantes</a> </small></p>
+                            <p class="project-url"><small><strong>Puedes verlo en:</strong> <a href="https://mjohar30.github.io/IntelimetricaProject/">Restaurantes</a> </small></p>                                
+                            <p class="project-description"> Proyecto desarrollado en el curso de Fundamentos de Javascript de Platzi.
+                                <br> El clásico juego de simón dice.
+                            </p>
+                        </div>
+                        <figure class="project-imageContainer">
+                            <img class="project-image" src="images/restaurantes.png" alt="curso react" width="500">
+                        </figure>
+                    </article>
+                    <article class="project">
+                        <div class="project-details">
+                            <h3 class="project-title">Restaurantes</h3>
+                            <h6 class="project-course">HTML, CSS y JS. API de Google Maps</h6>
+                            <p class="project-date"><small><strong>Fecha:</strong>19/12/2018</small></p>
+                            <p class="project-url"><small><strong>Repositorio:</strong> <a href="https://github.com/mjohar30/IntelimetricaProject">Repo Restaurantes</a> </small></p>
+                            <p class="project-url"><small><strong>Puedes verlo en:</strong> <a href="https://mjohar30.github.io/IntelimetricaProject/">Restaurantes</a> </small></p>                                
+                            <p class="project-description"> Se muestran los datos de distintos restaurantes, extrayéndolos de una url usando el método fetch.
+                                También se usa la API de Google Maps para mostrar la ubicación del restaurante, dependiendo de las coordenadas que se tengan.
+                            </p>
+                        </div>
+                        <figure class="project-imageContainer">
+                            <img class="project-image" src="images/restaurantes.png" alt="curso react" width="500">
+                        </figure>
+                    </article>
             </div>
         </section>
         <div class="container" id="eventos-titulo">
@@ -92,6 +125,16 @@
         </div>
         <section id="eventos" class="event-list">
             <div class="container">
+                <article class="event">
+                    <figure class="event-imageContainer">
+                        <img class="event-image" src="https://instagram.fmex1-1.fna.fbcdn.net/vp/2d44571e1e2dd98eeea0f0de4ba4df57/5DF174BB/t51.2885-15/e35/66372429_203107074004747_2455509863571753899_n.jpg?_nc_ht=instagram.fmex1-1.fna.fbcdn.net" width="500">
+                    </figure>
+                    <div class="event-detail">
+                        <h3 class="event-title">Platzi Conf México 2019</h3>
+                        <p class="event-description">Platzi Conf es un evento que reune </p>
+                        <a class="event-url" href="https://www.instagram.com/p/B0uYHHfn-fZ/" target="_blank">Ver imágenes</a>
+                    </div>
+                </article>
                 <article class="event">
                     <figure class="event-imageContainer">
                         <img class="event-image" src="https://instagram.fmex2-1.fna.fbcdn.net/vp/874565b8e985c98d2ae8a218c711f33b/5D9374C2/t51.2885-15/e35/57751229_627614957701514_7540681606849190302_n.jpg?_nc_ht=instagram.fmex2-1.fna.fbcdn.net" width="500">
@@ -102,16 +145,26 @@
                         <a class="event-url" href="https://www.youtube.com/watch?v=yjpIAejd-O8" target="_blank">Ver imágenes</a>
                     </div>
                 </article>
+                <article class="event">
+                    <figure class="event-imageContainer">
+                        <img class="event-image" src="https://instagram.fmex1-1.fna.fbcdn.net/vp/12a7428e59c0c949c55ec1bcb04aa5e8/5DFB618B/t51.2885-15/e35/19624967_146492545925320_1713463454548885504_n.jpg?_nc_ht=instagram.fmex1-1.fna.fbcdn.net" width="500">
+                    </figure>
+                    <div class="event-detail">
+                        <h3 class="event-title">Campus Party Guadalajara 2017</h3>
+                        <p class="event-description">Evento que reune</p>
+                        <a class="event-url" href="https://www.instagram.com/p/BWMWuH7gzwc/" target="_blank">Ver imágenes</a>
+                    </div>
+                </article>
                 <article class="event" class="event-list">
-                        <figure class="event-imageContainer">
-                            <img class="event-image" src="https://instagram.fmex2-1.fna.fbcdn.net/vp/3ebc6d3efff1b1d6c05338ef17d5bf4a/5D81E4BE/t51.2885-15/e35/58454026_117192435923127_6777294916081221711_n.jpg?_nc_ht=instagram.fmex2-1.fna.fbcdn.net" width="500">
-                        </figure>
-                        <div class="event-detail">
-                            <h3 class="event-title">Demo Day de Bedu</h3>
-                            <p class="event-description">Presentación de proyectos de los distintos bootcamps que se imparten en Bedu.</p>
-                            <a class="event-url" href="https://www.instagram.com/p/Bw58vX-FnOS/" target="_blank">Ver imágenes</a>
-                        </div>
-                    </article>            
+                    <figure class="event-imageContainer">
+                        <img class="event-image" src="https://instagram.fmex2-1.fna.fbcdn.net/vp/3ebc6d3efff1b1d6c05338ef17d5bf4a/5D81E4BE/t51.2885-15/e35/58454026_117192435923127_6777294916081221711_n.jpg?_nc_ht=instagram.fmex2-1.fna.fbcdn.net" width="500">
+                    </figure>
+                    <div class="event-detail">
+                        <h3 class="event-title">Demo Day de Bedu</h3>
+                        <p class="event-description">Presentación de proyectos de los distintos bootcamps que se imparten en Bedu.</p>
+                        <a class="event-url" href="https://www.instagram.com/p/Bw58vX-FnOS/" target="_blank">Ver imágenes</a>
+                    </div>
+                </article>            
             </div>
         </section>
         <section id="contacto" class="contact">
@@ -136,9 +189,10 @@
                     Curso de Desarrollo web online 2018 <img src="images/platzi.png" width="80" alt="Platzi">
                 </div>
                 <div>
-                    Designed with <\3 by <a href="https://twitter.com/thespianartist"> @thespianartist </a>
+                    Designed with 💚 by <a href="https://twitter.com/thespianartist"> @thespianartist </a>
                 </div>
             </div>
         </footer>
+        <script src="./js/index.js"></script>
     </body>
 </html>
