@@ -198,7 +198,8 @@ figure{
 
 .project-imageContainer img {
     max-width: 100%;
-  }
+    border-radius: 50px;
+}
 
 .flexbox{
     display: flex;
@@ -420,12 +421,15 @@ figure{
     justify-content: center;
     height: 40px;
     font-size: 2em;
-    text-decoration: underline;
     margin-bottom: 0.5em;
-    border: 2px solid white;
+    /* border: 2px solid white; */
+  }
+  .header a:hover{
+    text-decoration: underline;
   }
   .header .logo {
     text-align: center;
+    padding-top: 10px;
   }
   .menu {
     position: fixed;
